@@ -23,8 +23,7 @@ db.once('open', () => {
 /* Start Middleware */
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
-app.use('/fruits', require('./controllers/routeController'))
-app.use('/user', require('./controllers/authController'))
+app.use('/prducts', require('./controllers/routeController'))
 /* END Middleware */
 
 // Tell the app to listen on a port

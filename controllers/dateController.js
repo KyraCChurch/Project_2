@@ -16,7 +16,7 @@ const dataController = {
     },
     // Destroy
     destroy (req, res, next) {
-        Product.findByIdAndDelete(req.params.id, (err, deletedFruit) => {
+        Product.findByIdAndDelete(req.params.id, (err, deletedproduct) => {
             if (err) {
                 res.status(400).send({
                     msg: err.message
