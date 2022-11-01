@@ -12,7 +12,6 @@ app.use((req, res, next) => {
     res.locals.data = {}
     next()
 })
-app.use(cors())
 app.engine('jsx', require('jsx-view-engine').createEngine())
 app.set('view engine', 'jsx')
 db.once('open', () => {
@@ -23,7 +22,7 @@ db.once('open', () => {
 /* Start Middleware */
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
-app.use('/prducts', require('./controllers/routeController'))
+// app.use('/products', require('./controllers/routeController'))
 /* END Middleware */
 
 // Tell the app to listen on a port
