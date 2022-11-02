@@ -5,6 +5,20 @@ const exopress = require('express')
 const router = express.Router()
 const dataController = require('./dataControler')
 const viewController = require('./viewController')
+const apiController = require('./apiController')
+
+// API Routes
+// Index
+router.get('/api', dataController.index, apiController.index)
+// Delete
+router.delete('/api/:id', dataController.destroy, apiController.show)
+// Update
+router.put('/api/:id', dataController.update, apiController.show)
+// Create
+router.post('/api', dataController.create, apiController.show)
+// Show
+router.get('/api/:id', dataController.show, apiController.show)
+
 // Routes
 // Index
 router.get('/', dataController.index, viewController.index)
