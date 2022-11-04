@@ -1,16 +1,17 @@
 const mongoose = require('mongoose')
 
 // Make A Schema
-const productSchema = new mongoose.Schema({
+const fruitSchema = new mongoose.Schema({
   name: { type: String, required: true },
   color: { type: String, required: true },
-  readyToEat: Boolean
+  readyToEat: Boolean,
+  username: String
 })
 
 // Make A Model From The Schema
 
-const Product = mongoose.model('Product', productSchema)
+const Fruit = mongoose.model('Spell', spellSchema)
 
 // Export The Model For Use  In The App
 
-module.exports = Product
+module.exports = Spell
