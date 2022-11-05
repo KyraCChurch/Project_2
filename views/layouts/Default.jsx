@@ -11,7 +11,7 @@ class Default extends React.Component {
         </head>
         <body>
           <nav>
-            <a href='/spells'>Go to Spellbook</a><br />
+            <a href='/spells'>Go to My Spellbook</a><br />
             <a href='/spells/new'>Create a New Spell</a><br />
             {spell ? <a href={`/spells/${spell._id}/edit`}> {spell.name} Edit Page </a> : ''}<br />
             {spell ? <a href={`/spells/${spell._id}`}>{spell.name} Show Page</a> : ''}<br />

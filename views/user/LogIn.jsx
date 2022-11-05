@@ -8,7 +8,7 @@ class Login extends React.Component {
       <Default title="Login to Spellbook Account">
         <form action='/user/logIn' method='POST'>
           <fieldset>
-            <legend>New User</legend>
+            <legend>User</legend>
             <label>USERNAME: <input type='text' name='username' required /> </label>
             <label>PASSWORD: <input type='password' name='password' required />
             </label>
