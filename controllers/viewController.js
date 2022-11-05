@@ -1,17 +1,17 @@
-const RESOURCE_PATH = '/spell'
+const RESOURCE_PATH = '/spells'
 
 const viewController = {
   index (req, res, next) {
-    res.render('spell/Index', res.locals.data)
+    res.render('spells/Index', res.locals.data)
   },
   newView (req, res, next) {
-    res.render('spell/New')
+    res.render('spells/New')
   },
   edit (req, res, next) {
-    res.render('spell/Edit', res.locals.data)
+    res.render('spells/Edit', res.locals.data)
   },
   show (req, res, next) {
-    res.render('spell/Show', res.locals.data)
+    res.render('spells/Show', res.locals.data)
   },
   redirectHome (req, res, next) {
     res.redirect(RESOURCE_PATH)

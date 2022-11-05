@@ -13,6 +13,7 @@ In this application you can signup as a new user and then login. Once logged in 
 
 ## My Success
 SignUp <br>
+![Sign Up](/posts/path/to/img.jpg "Sign Up")
 Css
 
 ## Not successful

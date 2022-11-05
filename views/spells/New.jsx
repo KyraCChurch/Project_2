@@ -6,9 +6,9 @@ class New extends React.Component {
     return (
       <Default title='Create A New Spell'>
         <form method='POST' action='/spells'>
-          Name: <input type='text' name='name' defaultValue={name} /><br />
-          Ingredients: <input type='text' name='ingredients' defaultValue={Ingredients} /><br />
-          Instructions: <input type='text' name='instructions' defaultValue={Instructions} /> <br />
+          Name: <input type='text' name='name' /><br />
+          Ingredients: <input type='text' name='ingredients' /><br />
+          Instructions: <input type='text' name='instructions' /> <br />
           <input type='submit' value='Edit Spell' />
         </form>
       </Default>

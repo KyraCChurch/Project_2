@@ -2,7 +2,7 @@ const React = require('react')
 
 class Default extends React.Component {
   render () {
-    const {spell, title } = this.props
+    const { spell, title } = this.props
     return (
       <html>
         <head>
@@ -27,4 +27,3 @@ class Default extends React.Component {
 }
 
 module.exports = Default
-

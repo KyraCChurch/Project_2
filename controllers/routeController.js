@@ -4,17 +4,17 @@ const viewController = require('./viewController.js')
 const dataController = require('./dataController.js')
 const apiController = require('./apiController.js')
 
-////////////////////////////////////////
+/// /////////////////////////////////////
 // Router Middleware
-////////////////////////////////////////
+/// /////////////////////////////////////
 // Authorization Middleware
 router.use((req, res, next) => {
-    if (req.session.loggedIn) {
-      next()
-    } else {
-      res.redirect("/user/login")
-    }
-  })
+  if (req.session.loggedIn) {
+    next()
+  } else {
+    res.redirect('/user/login')
+  }
+})
 // add routes
 // Index
 router.get('/api', dataController.index, apiController.index)

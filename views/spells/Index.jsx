@@ -9,22 +9,20 @@ class Index extends React.Component {
         <ul>
           {
                         spells.map((spell) => {
-                          const { name, color, readyToEat } = spell
+                          const { name, ingredients, instructions } = spell
                           return (
                             <li key={spell._id}>
                               <a href={`/spells/${spell._id}`}>
                                 {name}
-                              </a> is {color}
+                              </a> is made with {ingredients}
 
                               <br />
                               {
-                                        readyToEat
-                                          ? 'It\'s ready to eat'
-                                          : 'It\'s not ready to eat'
+                                        instructions
                                     }
                               <br />
                               <form method='POST' action={`/spells/${spell._id}?_method=DELETE`}>
-                                <input type='submit' value={`Delete ${color} ${name}`} />
+                                <input type='submit' value={`Delete ${name}`} />
                               </form>
                             </li>
                           )

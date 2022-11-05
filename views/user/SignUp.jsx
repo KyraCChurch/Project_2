@@ -1,11 +1,10 @@
 const React = require('react')
 const Default = require('../layouts/Default')
 
-
 class SignUp extends React.Component {
   render () {
     return (
-      <Default title="Sign Up To Create Your Spellbook">
+      <Default title='Sign Up To Create Your Spellbook'>
         <form action='/user/signup' method='POST'>
           <fieldset>
             <legend>New User</legend>

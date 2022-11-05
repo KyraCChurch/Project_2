@@ -14,7 +14,7 @@ const dataController = {
       }
     })
   },
-  //destroy
+  // destroy
   destroy (req, res, next) {
     Spell.findByIdAndDelete(req.params.id, (err, deletedSpell) => {
       if (err) {
@@ -29,8 +29,7 @@ const dataController = {
   },
   // Update
   update (req, res, next) {
-    req.body.readyToEat = req.body.readyToEat === 'on'
-    Spell.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedFruit) => {
+    Spell.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedSpell) => {
       if (err) {
         res.status(400).send({
           msg: err.message
@@ -43,7 +42,6 @@ const dataController = {
   },
   // Create
   create (req, res, next) {
-    req.body.readyToEat = req.body.readyToEat === 'on'
     req.body.username = req.session.username
     Spell.create(req.body, (err, createdSpell) => {
       if (err) {

@@ -1,41 +1,35 @@
 const db = require('./db')
 const Spell = require('./spell')
 
-
 const starterSpells = [
-    {
-        name: 'Apple', color: 'red', readyToEat: true,
-    },
-    {
-        name: 'Orange', color: 'orange', readyToEat: true,
-    },
-    {
+  {
+    name: 'Love Spell', ingredients: 'none', instructions: 'Be Perfect, then they will love you'
+  },
+  {
+    name: 'Getting an F', ingredients: 'A Single Pear', instructions: 'Mail the pear to your teacher with a note saying "An apple a day keeps the doctor away, what about a pear?"'
+  },
+  {
 
-        name: 'Coconut', color: 'brown', readyToEat: false,
-    },
-    {
+    name: 'Flying', ingredients: '1 red grape, 1 green grape', instructions: 'Eat both grapes at once on a 2 story building on a full moon and go for it.'
+  },
+  {
 
-        name: 'Grapes', color: 'purple', readyToEat: true,
-    },
-    {
-
-        name: 'Pear', color: 'green', readyToEat: true,
-    }
+    name: 'Making friends', ingredients: 'a life', instructions: 'Go outside and do something.'
+  }
 ]
 
-
 Spell.deleteMany({})
-    .then(() => {
-        Spell.create(starterSpells)
-        .then((createdFruits) => {
-            console.log('created spells:', createdSpells)
-            db.close()
-        })
-        .catch(err => {
-            console.log(err)
-            db.close()
-        })
-    }).catch(err => {
+  .then(() => {
+    Spell.create(starterSpells)
+      .then((createdSpells) => {
+        console.log('created spells:', createdSpells)
+        db.close()
+      })
+      .catch(err => {
         console.log(err)
         db.close()
-    })
+      })
+  }).catch(err => {
+    console.log(err)
+    db.close()
+  })

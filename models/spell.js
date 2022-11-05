@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 // Make A Schema
 const spellSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  color: { type: String, required: true },
-  readyToEat: Boolean,
+  ingredients: { type: String, required: true },
+  instructions: { type: String, required: true },
   username: String
 })
 
