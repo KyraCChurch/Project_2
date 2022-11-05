@@ -22,6 +22,8 @@ Create, Read, Delete <br>
 ## Not successful
 Edit, it won't let me go onto the page for each spell so I'm not able to edit it.
 
+## Links 
+
 ### [Trello Link](https://trello.com/invite/b/RpqG6kJd/ATTIcc3aa57a8bb81dfbd5bb9c45e939a2299CD387FB/project-2)
 
 ### [My Project](http://localhost:3000/user/signup)
