@@ -10,15 +10,17 @@ This spell book is an application where you can log into your own spell book and
 ## Function
 
 In this application you can signup as a new user and then login. Once logged in you can create spells. After creating a spell you have the option to edit or delete any spell from it's view screen which you reach after clicking it.
+<img src="https://i.im.ge/2022/11/06/2J8hKJ.DC78AD40-8F7A-45DA-AD68-25A58DA49B8D.png" alt="Logged in">
 
 ## My Success
 SignUp <br>
-![Sign Up](/posts/path/to/img.jpg "Sign Up")
-Css
+<img src="https://i.im.ge/2022/11/06/2JgbHx.27E1AC9E-B572-48F1-8038-01412E24BF99.jpg" alt="Sign Up Page"><br>
+Css <br>
+Login <br>
+Create, Read, Delete <br>
 
 ## Not successful
-Login, is not able to go from login screen to the beginning spell screen. <br>
-Since I cannot reach the beginning spell screen I'm not sure what else was successful vs not. 
+Edit, it won't let me go onto the page for each spell so I'm not able to edit it.
 
 ### [Trello Link](https://trello.com/invite/b/RpqG6kJd/ATTIcc3aa57a8bb81dfbd5bb9c45e939a2299CD387FB/project-2)
 

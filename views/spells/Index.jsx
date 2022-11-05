@@ -14,12 +14,10 @@ class Index extends React.Component {
                             <li key={spell._id}>
                               <a href={`/spells/${spell._id}`}>
                                 {name}
-                              </a> is made with {ingredients}
+                              </a> needs {ingredients}
 
                               <br />
-                              {
-                                        instructions
-                                    }
+          {instructions}
                               <br />
                               <form method='POST' action={`/spells/${spell._id}?_method=DELETE`}>
                                 <input type='submit' value={`Delete ${name}`} />

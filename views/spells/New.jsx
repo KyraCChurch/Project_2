@@ -9,7 +9,7 @@ class New extends React.Component {
           Name: <input type='text' name='name' /><br />
           Ingredients: <input type='text' name='ingredients' /><br />
           Instructions: <input type='text' name='instructions' /> <br />
-          <input type='submit' value='Edit Spell' />
+          <input type='submit' value='Add Spell' />
         </form>
       </Default>
     )
