@@ -6,7 +6,7 @@ class Login extends React.Component {
   render () {
     return (
       <Default title="Login to Spellbook Account">
-        <form action='/user/login' method='POST'>
+        <form action='/user/logIn' method='POST'>
           <fieldset>
             <legend>New User</legend>
             <label>USERNAME: <input type='text' name='username' required /> </label>
